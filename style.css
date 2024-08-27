@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00bcd4; /* فيروزي */
+    color: #fff; /* أبيض */
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 60px);
+    padding: 20px;
+    background-color: #fff; /* أبيض */
+}
+
+button {
+    background-color: #00bcd4; /* فيروزي */
+    color: #000; /* أسود */
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #0097a7; /* لون أغمق للفأزر عند المرور عليه */
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.language-selector {
+    position: relative;
+}
+
+#language-options {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+#language-options button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+}
+
+.code-container {
+    width: 80%;
+    max-width: 800px;
+}
+
+.code-container pre {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+}

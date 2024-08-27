@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CodeCreator</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <p class="instruction">Enter the description below:</p>
+            <textarea id="description" placeholder="Example: White user interface with a welcome message"></textarea>
+            <div class="language-selector">
+                <button onclick="toggleLanguageOptions()">Select Language</button>
+                <div id="language-options" class="hidden">
+                    <button onclick="selectLanguage('JavaScript')">JavaScript</button>
+                    <button onclick="selectLanguage('Python')">Python</button>
+                    <!-- Add more languages as needed -->
+                </div>
+            </div>
+            <p id="error-message" class="error hidden">Please enter the correct language.</p>
+            <button id="submit-button" onclick="validateInput()">Submit</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
